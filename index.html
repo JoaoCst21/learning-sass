@@ -2,59 +2,62 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="style-css/layout.css">
 	<title>UI with Sass</title>
 </head>
 <body>
-	<nav>
+	<article class="card">
+		<div class="time">
+			<span class="scheduled-time">3:30 PM</span>
+			<span class="duration">30 minutes</span>
+		</div>
+		<div class="information__client">
+			<img src="https://picsum.photos/200/300" alt="">
+			<div class="main-info">
+				<span class="name">Meghan Smith</span>
+				<div class="place">
+					<i class="bi bi-geo-alt-fill"></i>
+					<span>Intrepid Cafe</span>
+				</div>
+			</div>
+		</div>
+		<div class="date-and-status">
+			<div class="date">September 15th</div>
+			<div class="status">Confirmed</div>
+		</div>
+		<div class="actions">
+			<button>
+				<i class="bi bi-pencil-square"></i>
+			</button>
+			<button>
+				<i class="bi bi-x-lg"></i>
+			</button>
+		</div>
+	</article>
+	<nav class="nav">
 		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li>
+				<a href="#">
+					<i class="bi bi-house-door"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bi bi-chat-square-dots"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bi bi-bell"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bi bi-clock"></i>
+				</a>
+			</li>
 		</ul>
 	</nav>
-	<div class="content">
-		<header class="header"></header>
-		<div class="main-container">
-			<main class="board"></main>
-			<section class="upcoming">
-				<h2>Upcoming</h2>
-				<div class="container-cards">
-					<article class="card">
-						<div class="time">
-							<span class="big-text">11:00 am</span>
-							<span class="small-text">45 minutes</span>
-						</div>
-						<div class="information-card"></div>
-						<div class="actions">
-						</div>
-					</article>
-					<article class="card">
-						<div class="time"></div>
-						<div class="information-card"></div>
-						<div class="actions"></div>
-					</article>
-					<article class="card">
-						<div class="time"></div>
-						<div class="information-card"></div>
-						<div class="actions"></div>
-					</article>
-					<article class="card">
-						<div class="time"></div>
-						<div class="information-card"></div>
-						<div class="actions"></div>
-					</article>
-					<article class="card">
-						<div class="time"></div>
-						<div class="information-card"></div>
-						<div class="actions"></div>
-					</article>
-				</div>
-			</section>
-			<aside class="information"></aside>
-		</div>
-	</div>
 </body>
 </html>

@@ -1,0 +1,120 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 12.5%;
+  border-radius: 15px;
+  box-shadow: 0.2rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card > * {
+  justify-content: center;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: red;
+}
+.card .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.card .time .scheduled-time {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card .time .duration {
+  color: rgba(0, 0, 0, 0.4);
+}
+.card .information__client {
+  display: flex;
+  align-items: center;
+}
+.card .information__client img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card .information__client .main-info {
+  display: flex;
+  flex-direction: column;
+}
+.card .information__client .main-info .name {
+  font-weight: bold;
+}
+.card .information__client .main-info .place {
+  color: rgba(0, 0, 0, 0.4);
+}
+.card .information__client .main-info .place i {
+  color: midnightblue;
+}
+.card .date-and-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .date-and-status .date {
+  font-weight: bold;
+}
+.card .date-and-status .status {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #376FFF;
+}
+.card .date-and-status .status:before {
+  content: "";
+  margin-inline: 2px;
+  border: 3.5px #376FFF solid;
+  border-radius: 50%;
+}
+.card .actions {
+  display: flex;
+  gap: 5px;
+}
+.card .actions button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: gray;
+}
+
+.nav {
+  font-size: 2rem;
+}
+.nav ul {
+  list-style: none;
+  color: #010322;
+}
+.nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# sourceMappingURL=layout.css.map */
